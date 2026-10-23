@@ -8,3 +8,8 @@
 Get-Process |
     Sort-Object WorkingSet |
     Select-Object -First 5 Name, WorkingSet
+
+
+Get-Process |
+    Sort-Object WorkingSet -Descending |
+    Select-Object -First 5 Name, WorkingSet
