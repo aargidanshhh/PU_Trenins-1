@@ -6,3 +6,6 @@
 # Sameklē kļūdu un izlabo to.
 
 Get-Process | Where-Object { WorkingSet -gt 100MB }
+
+
+Get-Process | Where-Object { $_.WorkingSet -gt 100MB }
